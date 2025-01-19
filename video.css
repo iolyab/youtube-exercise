@@ -1,3 +1,5 @@
+/*search*/
+
 .search-container {
     display: flex;
     justify-content: space-between;
@@ -163,6 +165,8 @@
     border-radius: 20px;
 }
 
+/*sidebar*/
+
 .sidebar-container {
     display: flex;
     flex-direction: column;
@@ -262,6 +266,7 @@
     flex-wrap: wrap;
     align-items: stretch;
     margin-left: 50px;
+    row-gap: 25px;
 }
 
 
@@ -278,6 +283,8 @@
 .thumbnail-img {
     border-radius: 20px;
     position: relative;
+    width: 336px;
+    height: 188px;
 }
 
 .description-container {
