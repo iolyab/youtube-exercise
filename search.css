@@ -1,0 +1,129 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.bar-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+
+.logo-img {
+    width: 130px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.middle-section {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.search-bar {
+    width: 500px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 250px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 191, 191);
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar::placeholder {
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.search-button-container {
+    width: 64px;
+    height: 49px;
+    margin-top: 15px;
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 191, 191);
+    margin-left: -30px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.search-button {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    padding-left: 5px;
+}
+
+.voice-button-container {
+    width: 40px;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 20px;
+    border-style: none;
+}
+.voice-button {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.create-button {
+    width: 90px;
+    height: 40px;
+    border-style: none;
+    border-radius: 18px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F8F8F8;
+}
+
+.notification-button-container {
+    width: 40px;
+    height: 40px;
+    padding-left: 4px;
+    background-color: white;
+    border-style: none;
+}
+
+.notification-button {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
