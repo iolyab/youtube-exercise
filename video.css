@@ -6,7 +6,7 @@
     flex-direction: row;
     flex: 1;
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: fixed;
     z-index: 1;
     top: 0px;
@@ -20,7 +20,7 @@
     align-items: center;
     width: 200px;
     height: 70px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .bar-icon {
@@ -43,7 +43,7 @@
     flex-direction: row;
     flex: 1;
     width: 0;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .search-bar {
@@ -186,7 +186,7 @@
     font-family: Arial;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px;
+    padding-left: 20px;
     border-style: none;
     border-radius: 10px;
     background-color: #F8F8F8;
@@ -201,7 +201,7 @@
     width: 24px;
     height: 24px;
     object-fit: cover;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .subscriptions-icon-container {
@@ -213,7 +213,7 @@
     font-family: Arial;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px;
+    padding-left: 20px;
     border-style: none;
     border-radius: 10px;
     background-color: white;
@@ -228,7 +228,7 @@
     width: 24px;
     height: 24px;
     object-fit: cover;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .you-icon-container {
@@ -240,7 +240,7 @@
     font-family: Arial;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px;
+    padding-left: 20px;
     border-style: none;
     border-radius: 10px;
     background-color: white;
@@ -255,25 +255,21 @@
     width: 24px;
     height: 24px;
     object-fit: cover;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 /*video-container*/
 
 .container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-left: 50px;
-    row-gap: 25px;
-    column-gap: 25px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 15px;
 }
 
 
 .video-container {
-    width: 336px;
-    margin-left: 20px;
+    max-width: 400px;
+    min-width: 350px;
 }
 
 .thumbnail-container {
@@ -300,8 +296,7 @@
 
 .thumbnail-img {
     border-radius: 20px;
-    width: 336px;
-    height: 188px;
+    width: 100%;
 }
 
 .description-container {
@@ -311,8 +306,8 @@
 
 .channel-photo {
     display: flex;
-    margin-top: 10px;
-    margin-right: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 .channel-img {
@@ -329,7 +324,10 @@ p {
     font-size: 16px;
     color: #0F0F0F;
     font-weight: bold;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .channel-name {
@@ -342,10 +340,12 @@ p {
 .stats-text {
     font-size: 14px;
     color: #606060;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
 }
 
 .icon-div {
-    margin-left: 15px;
+    padding-left: 15px;
     padding-top: 17px;
 }
