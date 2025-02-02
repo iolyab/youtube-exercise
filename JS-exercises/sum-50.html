@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum is 50</title>
+    </head>
+    <body>
+        <main>
+            <p>Check a pair of numbers and return true if one of the numbers is 50 or if their sum is 50</p>
+            <input class="js-first" placeholder="1st number">
+            <input class="js-second" placeholder="2nd number">
+            <div>
+                <button class="js-button" onClick="checkSum()">Check</button>
+            </div>
+            <p class="js-result"></p>
+        </main>
+        <script>
+            function checkSum() {
+                let firstNumber = document.querySelector('.js-first').value;
+                let secondNumber = document.querySelector('.js-second').value;
+                let number = '';
+
+                if(Number(firstNumber) === 50) {
+                    number = true;
+                } else if(Number(secondNumber) === 50) {
+                    number = true;
+                } else if(Number(firstNumber) + Number(secondNumber) === 50) {
+                    number = true; 
+                } else {
+                    number = Number(firstNumber) + Number(secondNumber);
+                }
+
+                document.querySelector('.js-result').innerHTML = number;
+            }
+        </script>
+    </body>
+</html>

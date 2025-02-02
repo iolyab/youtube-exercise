@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grades</title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            function evaluateGrades(finalExam) {
+                let totalMarks = '94';
+
+                if(finalExam) {
+                    return totalMarks >= 90;
+                } else if(totalMarks >= 89 && totalMarks <=100) {
+                    return "You've got an A+!"
+                }
+            }
+
+            console.log(evaluateGrades(false));
+            console.log(evaluateGrades(true));
+        </script>
+    </body>
+</html>

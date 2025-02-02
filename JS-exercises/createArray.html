@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an array</title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+
+            const num = [1, 2, 3];
+            
+            function middleValues(first, second) {
+                let array = [];
+                array.push(first[1], second[1]);
+                return array;
+            }
+
+            console.log(middleValues([1, 2, 3], [4, 5, 6]));
+
+            function elementsArray(a, b) {
+                let newArray = [];
+                newArray.push(a[0], b[2]);
+                return newArray;
+            }
+
+            console.log(elementsArray([1, 2, 3], [4, 5, 6]));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random number game</title>
+    </head>
+    <body>
+        <main>
+            <p>Random Number Game</p>
+            <p>Guess the number from 1-10</p>
+            <input class="js-input" placeholder="Write your number">
+            <button class="js-button" onClick="playGame()">Calculate</button>
+            <p class="js-result"></p>
+        </main>
+        <script>
+
+            function playerMove() {
+
+                const inputElement = document.querySelector('.js-input');
+                return Number(inputElement.value);
+            }
+
+            
+
+            function pickComputerMove(playerNumber) {
+                const randomNumber = Math.floor(Math.random() * 10) + 1;
+                let computerMove = '';
+
+                if(playerNumber === randomNumber) {
+                    computerMove = 'Good work!';
+                } else {
+                    computerMove = `Not matched! Random number is: ${randomNumber}`;
+                }
+
+                return computerMove;
+            }
+
+          
+            function playGame() {
+                const playerNumber = playerMove();
+                const computerMove = pickComputerMove(playerNumber);
+                document.querySelector('.js-result').innerHTML = computerMove;
+            }
+
+
+
+        </script>
+    </body>
+</html>

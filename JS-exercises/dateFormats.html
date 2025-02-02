@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Formats</title>
+    </head>
+    <body>
+        <main>
+            <p class="js-first"></p>
+            <p class="js-second"></p>
+            <p class="js-third"></p>
+            <p class="js-fourth"></p>
+        </main>
+        <script>
+            function displayDateFirst() {
+                const today = new Date();
+                const day = today.getDate().toString().padStart(2, '0');
+                const month = (today.getMonth() + 1).toString().padStart(2, '0');
+                const year = today.getFullYear();
+                const date = `${month}-${day}-${year}`;
+                return date;
+            }
+            document.querySelector('.js-first').innerHTML = displayDateFirst();
+
+            function displayDateSecond() {
+                const today = new Date();
+                const day = today.getDate().toString().padStart(2, '0');
+                const month =(today.getMonth() + 1).toString().padStart(2, '0');
+                const year = today.getFullYear();
+                const date = `${day}-${month}-${year}`;
+                return date;
+            }
+            document.querySelector('.js-second').innerHTML = displayDateSecond();
+
+            function displayDateThird() {
+                const today = new Date();
+                const day = today.getDate().toString().padStart(2, '0');
+                const month = (today.getMonth() + 1).toString().padStart(2, '0');
+                const year = today.getFullYear();
+                const date = `${month}/${day}/${year}`;
+                return date;
+            }
+            document.querySelector('.js-third').innerHTML = displayDateThird();
+
+            function displayDateFourth() {
+                const today = new Date();
+                const day = today.getDate().toString().padStart(2, '0');
+                const month =(today.getMonth() + 1).toString().padStart(2, '0');
+                const year = today.getFullYear();
+                const date = `${day}/${month}/${year}`;
+                return date;
+            }
+            document.querySelector('.js-fourth').innerHTML = displayDateFourth();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summing numbers</title>
+    </head>
+    <body>
+        <main>
+            <p>Compute the sum of the two numbers. If the two values are the same, then return triple their sum.</p>
+            <input class="js-first" placeholder="1st number">
+            <input class="js-second" placeholder="2nd number">
+            <div>
+                <button class="js-button" onClick="sumNumbers()">Calculate</button>
+            </div>
+            <p class="js-result"></p>
+        </main>
+        <script>
+            function sumNumbers() {
+                let firstNumber = document.querySelector('.js-first').value;
+                let secondNumber = document.querySelector('.js-second').value;
+                let number = '';
+
+                if(Number(firstNumber) === Number(secondNumber)) {
+                    number = (Number(firstNumber) + Number(secondNumber)) * 3;
+                } else {
+                    number = Number(firstNumber) + Number(secondNumber);
+                }
+
+                document.querySelector('.js-result').innerHTML = number;
+            }
+        </script>
+    </body>
+</html>

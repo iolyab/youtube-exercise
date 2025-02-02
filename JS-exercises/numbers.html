@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Numbers</title>
+    </head>
+    <body>
+        <main>
+            <p>Multiply or Divide</p>
+            <input class="js-first" placeholder="1st number">
+            <input class="js-second" placeholder="2nd number">
+            <div>
+                <button class="js-multiply" onClick="multiplyNumbers()">Multiply</button>
+                <button class="js-divide" onClick="divideNumbers()">Divide</button>
+            </div>
+            <p class="js-result"></p>
+        </main>
+        <script>
+
+            function multiplyNumbers() {
+                let firstNumber = document.querySelector('.js-first').value;
+                let secondNumber = document.querySelector('.js-second').value;
+
+                let number = Number(firstNumber) * Number(secondNumber);
+                document.querySelector('.js-result').innerHTML = number;
+            }
+
+            function divideNumbers() {
+                let firstNumber = document.querySelector('.js-first').value;
+                let secondNumber = document.querySelector('.js-second').value;
+
+                if(Number(secondNumber) === 0) {
+                    document.querySelector('.js-result').innerHTML = `You can't divide by 0`;
+                } else {
+                    let number = Number(firstNumber) / Number(secondNumber);
+                    document.querySelector('.js-result').innerHTML = number;
+                }
+            }
+
+        </script>
+    </body>
+</html>

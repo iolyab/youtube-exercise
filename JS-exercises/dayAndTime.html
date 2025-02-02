@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day and Time</title>
+    </head>
+    <body>
+        <main>
+            <p class="js-date"></p>
+            <p class="js-time"></p>
+        </main>
+        <script>
+            function displayDate() {
+                const today = new Date();
+                const day = { weekday: 'long' };
+                const currentDay = today.toLocaleDateString('en-us', day)
+                return currentDay;
+            }
+            document.querySelector('.js-date').innerHTML = `Today is: ${displayDate()}`;
+
+            function displayTime() {
+                const today = new Date();
+                let hours = today.getHours();
+                const minutes = today.getMinutes().toString().padStart(2, '0');
+                const seconds = today.getSeconds().toString().padStart(2, '0');
+                const ampm = hours >= 12 ? 'PM' : "AM";
+
+                hours = hours % 12;
+                hours = hours ? hours : 12;
+
+                const time = `${hours} ${ampm} : ${minutes} : ${seconds}`;
+                return time;
+            }
+            document.querySelector('.js-time').innerHTML = `Current time is: ${displayTime()}`;
+        </script>
+    </body>
+</html>
