@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            const arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+            
+            let filteredArray = arr1.filter(function(n) {
+                return n >= -4;
+            });
+
+            filteredArray.sort(function(a, b) {
+                return a-b;
+            });
+            console.log(filteredArray);
+
+            /*
+            const numbers = [10, 50, 20, 40, 30];
+
+            numbers.sort((a, b) => {
+                return b - a;
+            })
+            console.log(numbers);
+            */
+
+            /*
+            const library = [
+                { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+                { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+                { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+            ];
+
+
+            library.sort((a, b) => a.title.localeCompare(b.title));
+            console.log(library);
+            */
+        </script>
+    </body>
+</html>

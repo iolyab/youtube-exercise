@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            /*
+            const prices = [4, 8, 15, 16, 23, 42];
+            const discountPrices = [];
+
+            prices.forEach((price, i, arr) => {
+                discountPrices.push(price * 0.5)
+            })
+            console.log(discountPrices);
+            */
+
+            /*
+            const fruits = ["apple", "banana", "cherry", "date"];
+
+            fruits.forEach(fruit => {
+                console.log(fruit);
+            });
+            */
+
+
+            /*
+            const str = "hello world";
+            const letters = str.split("");
+            const letterCount = {};
+
+            letters.forEach((letter) => {
+                if (letter !== " ") {
+                    letterCount[letter] = (letterCount[letter] || 0) + 1
+                }
+            });
+            console.log(letterCount);
+            */
+
+
+            /*
+            myColor = ["Red", "Green", "White", "Black"];
+            let str = "";
+
+            myColor.forEach((color, index) => {
+                str += color;
+                if (index < myColor.length - 1) {
+                    str += ",";
+                }
+            })
+            console.log(str);
+            */
+
+            /*
+            const words = ["banana", "apple", "strawberry", "grape", "watermelon"];
+            let longestWord = "";
+
+            words.forEach((word) => {
+                if(word.length > longestWord.length) {
+                    longestWord = word;
+                }
+            })
+            console.log(`The longest word is: ${longestWord}`);
+            */
+
+            /*
+            const words = ["JavaScript", "is", "fun"];
+            let sentence = "";
+
+            words.forEach((word) => {
+                sentence += word + " ";
+            })
+            console.log(sentence);
+            */
+
+
+            /*
+            const numbers = [7, 3, 9, 12, 5, 1];
+            let max = -Infinity;
+            let min = Infinity;
+
+            numbers.forEach(num => {
+                if (num > max) {
+                    max = num;
+                } else if (num < min) {
+                    min = num;
+                }
+            });
+            console.log(`Max: ${max}, Min: ${min}`);
+            */
+
+            /*
+            const nestedArray = [[1, 2], [3, 4], [5, 6]];
+            let flattened = [];
+
+            nestedArray.forEach(subArray => {
+                subArray.forEach(num => {
+                    flattened.push(num);
+                });
+            });
+
+            console.log(flattened);
+            */
+
+            /*
+            const numbers = [1, 2, 3, 4, 5];
+
+            const doubledNUmbers = numbers.map(number => {
+                return number * 2;
+            });
+            console.log(doubledNUmbers);
+            */
+
+            /*
+            const numbers = [10, 20, 30, 40];
+
+            const str = numbers.map(number => {
+                return number.toString();
+            });
+            console.log(str);
+            */
+
+            /*
+            const words = ["hi", "hello", "sun", "day", "yes", "no"];
+
+            const filteredWords = words.filter(word => word.length >= 3);
+            console.log(filteredWords);
+            */
+
+            /*
+            const people = [
+                { name: "Alice", age: 17 },
+                { name: "Bob", age: 22 },
+                { name: "Charlie", age: 16 },
+                { name: "David", age: 19 }
+            ];
+
+            const users = people.filter(user => user.age >= 18);
+            console.log(users);
+            */
+
+            /*
+            const numbers = [10, 55, 67, 30, 99, 40];
+
+            const filteredNumbers = numbers.filter(number => number > 50);
+            console.log(filteredNumbers);
+            const doubledNumbers = filteredNumbers.map(number => number * 2);
+            console.log(doubledNumbers);
+            */
+
+            /*
+            const products = [
+                { id: 1, name: "Laptop", price: 1000 },
+                { id: 2, name: "Phone", price: 500 },
+                { id: 3, name: "Tablet", price: 300 }
+            ];
+
+            const newKey = products.map(obj => ({...obj, inStock: true}));
+            console.log(newKey);
+            */
+
+            /*
+            const students = [
+                { name: "Anna", score: 45 },
+                { name: "Ben", score: 80 },
+                { name: "Chris", score: 90 },
+                { name: "Diana", score: 30 }
+            ];
+
+            const filteredStudents = students.filter(student => student.score > 60);
+            console.log(filteredStudents);
+            const studentsNames = filteredStudents.map(student => student.name);
+            console.log(studentsNames);
+            */
+
+            /*
+            const products = [
+                { name: "TV", price: 400 },
+                { name: "Laptop", price: 1000 },
+                { name: "Phone", price: 800 }
+            ];
+
+            const maxPrice = Math.max(...products.map(product => product.price));
+            console.log(maxPrice);
+            const theMostExpensive = products.filter(product => product.price === maxPrice);
+            console.log(theMostExpensive);
+            */
+
+            /*
+            const people = [
+                { firstName: "Alice", lastName: "Smith", age: 25 },
+                { firstName: "Bob", lastName: "Brown", age: 35 },
+                { firstName: "Charlie", lastName: "Davis", age: 40 }
+            ];
+
+            const filtered = people.filter(person => {
+                return person.age > 30;
+            });
+            console.log(filtered);
+            const transformed = filtered.map(person => {
+                return `${person.firstName} ${person.lastName} (${person.age})`
+            });
+            console.log(transformed);
+            */
+        </script>
+    </body>
+</html>

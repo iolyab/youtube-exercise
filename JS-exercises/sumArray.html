@@ -11,12 +11,30 @@
                 const nums = [1, 2, 3];
                 let total = 0;
 
+                /*
                 for(i = 0; i < nums.length; i++) {
                     const num = nums[i];
                     total += num;
                 }
                 console.log(total);
+                */
 
+                /*
+                nums.forEach(calculate);
+
+                function calculate(element) {
+                    total += element;
+                }
+
+                console.log(total);
+
+                */
+
+                nums.forEach((element) => {
+                    total += element;
+                })
+
+                console.log(total);
         </script>
     </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            /*
+            const arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+            function mostFrequent(arr) {
+                let times = {};
+                let maxCount = 0;
+                let mostFrequentItem = null;
+
+                arr.forEach(item => {
+                    times[item] = (times[item] || 0) + 1;
+
+                    if(times[item] > maxCount) {
+                        maxCount = times[item];
+                        mostFrequentItem = item;
+                    }
+                });
+
+                return `${mostFrequentItem} ( ${maxCount} times)`;
+            }
+
+            console.log(mostFrequent(arr1));
+            */
+
+            const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+            let frequencyCounter = {};
+            let maxCount = 0;
+            let mostFrequentItem = null;
+
+            words.forEach(item => {
+                frequencyCounter[item] = (frequencyCounter[item] || 0) + 1;
+
+                if(frequencyCounter[item] > maxCount) {
+                    maxCount = frequencyCounter[item];
+                    mostFrequentItem = maxCount;
+                }
+            });
+
+            console.log(frequencyCounter);
+        </script>
+    </body>
+</html>

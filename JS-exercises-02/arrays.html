@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+            <h2>Exercise 1</h2>
+            <p>Write a JavaScript program to find all the unique values in a set of numbers.</p>
+            <p>
+                Test Data :<br>
+                [1, 2, 2, 3, 4, 4, 5]<br>
+                [1, 2, 3, 4, 5]<br>
+                [1, -2, -2, 3, 4, -5, -6, -5]<br>
+                Expected Output:<br>
+                [1,2,3,4,5]<br>
+                [1,2,3,4,5]<br>
+                [1,-2,3,4,-5,-6]<br>
+            </p>
+            <h2>Exercise 2</h2>
+            <p>
+                Write a JavaScript program to remove all false values from an object or array.
+            </p>
+            <p>
+                Test Data :<br>
+                    const obj = {<br>
+                    a: null,<br>
+                    b: false,<br>
+                    c: true,<br>
+                    d: 0,<br>
+                    e: 1,<br>
+                    f: '',<br>
+                    g: 'a',<br>
+                    h: [null, false, '', true, 1, 'a'],<br>
+                    i: { j: 0, k: false, l: 'a' }<br>
+                    Expected Output:<br>
+                    {"c":true,"e":1,"g":"a","h":[true,1,"a"],"i":{"l":"a"}}<br>
+            </p>
+            <h2>Exercise 3</h2>
+            <p>Write a JavaScript program to count the number of arrays inside a given array.</p>
+            <p>
+                Test Data :<br>
+                ([2,8,[6],3,3,5,3,4,[5,4]]) -> 2<br>
+                ([2,8,[6,3,3],[4],5,[3,4,[5,4]]]) -> 3<br>
+                Expected Output:<br>
+                Number of arrays inside the said array: 2<br>
+                Number of arrays inside the said array: 3<br>
+            </p>
+            <h2>Exercise 4</h2>
+            <p>
+                Write a JavaScript function to check whether an `input` is an array or not.<br>
+                Test Data :<br>
+                console.log(is_array('w3resource'));<br>
+                console.log(is_array([1, 2, 4, 0]));<br>
+                false<br>
+                true<br>
+            </p>
+            <h2>Exercise 5</h2>
+            <p>Write a JavaScript program to find the most frequent item in an array.</p>
+            <p>
+                Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];<br>
+                Sample Output : a ( 5 times )
+            </p>
+        </main>
+        <script>
+            /* EXERCISE 1
+            const nums = [1, 2, 2, 3, 4, 4, 5]
+
+            const myNumbers = nums.filter((number, index, arr) => arr.indexOf(number) === index);
+            console.log(myNumbers);
+
+            */
+
+            /* EXERCISE 2
+            const obj = {
+                a: null,
+                b: false,
+                c: true,
+                d: 0,
+                e: 1,
+                f: '',
+                g: 'a',
+                h: [null, false, '', true, 1, 'a'],
+                i: { j: 0, k: false, l: 'a' }
+            }
+
+            const trueElements = Object.values(obj).filter((element) => Boolean(element));
+            console.log(trueElements);
+            */
+
+            /* EXERCISE 3
+            const arr = [2,8,[6],3,3,5,3,4,[5,4]];
+
+            const countedArrays = arr.filter(element => Array.isArray(element));
+            console.log(`Number of arrays inside the said array: ${countedArrays.length}`);
+            */
+
+            /* EXERCISE 4
+            function is_array(input) {
+                return Array.isArray(input);
+            }
+            console.log(is_array('w3resource'));
+            console.log(is_array([1, 2, 4, 0]));
+            */
+
+
+            
+        </script>
+    </body>
+</html>
