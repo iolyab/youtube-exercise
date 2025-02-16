@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            /*
+            const products = [
+                { name: "Laptop", price: 1000, category: "Electronics" },
+                { name: "Shirt", price: 50, category: "Clothing" },
+                { name: "Phone", price: 800, category: "Electronics" },
+                { name: "Jeans", price: 60, category: "Clothing" }
+            ];
+
+            function transformData(category) {
+                return products
+                .filter(product => product.category === category)
+                .map(product => ({
+                    name: product.name,
+                    price: product.price * 0.10
+                }));
+            }
+            console.log(transformData("Electronics"));
+            */
+
+            /*
+            const students = [
+                { name: "John", age: 20, grade: "A" },
+                { name: "Alice", age: 22, grade: "B" },
+                { name: "Bob", age: 21, grade: "A" },
+                { name: "Charlie", age: 23, grade: "C" }
+            ];
+
+            function groupByGrade(grade) {
+                return students
+                .filter(student => student.grade === grade)
+                .map(student => ({
+                    name: student.name,
+                    grade: student.grade
+                }));
+            }
+            console.log(groupByGrade("A"));
+            */
+
+            /*
+            const students = [
+                { name: "Alice", grade: 95 },
+                { name: "Bob", grade: 82 },
+                { name: "Charlie", grade: 67 },
+                { name: "David", grade: 88 },
+                { name: "Eve", grade: 58 }
+            ];
+
+            function groupedStudents() {
+                return students
+                .reduce((acc, student) => {
+                    let category;
+                    if(student.grade >= 90) {
+                        category = "Excellent";
+                    } else if(student.grade >= 70) {
+                        category = "Good";
+                    } else if(student.grade < 70) {
+                        category = "Average";
+                    }
+
+                    if(!acc[category]) {
+                        acc[category] = [];
+                    }
+
+                    acc[category].push(student.name);
+                    return acc;
+                }, {});
+            }
+            console.log(groupedStudents());
+            */
+
+            /*
+            const inventory = [
+                { name: "Keyboard", price: 100, stock: 10 },
+                { name: "Mouse", price: 50, stock: 0 },
+                { name: "Monitor", price: 300, stock: 5 },
+                { name: "USB Cable", price: 10, stock: 0 },
+            ];
+
+            const inStock = inventory.filter(item => {
+                return item.stock > 0;
+            })
+            console.log(inStock);
+            */
+
+            /*
+            const students = [
+                { name: "Alice", grade: "A" },
+                { name: "Bob", grade: "B" },
+                { name: "Charlie", grade: "A" },
+                { name: "David", grade: "C" },
+            ];
+
+            const grouped = students.reduce((group, student) => {
+                if(!group[student.grade]) {
+                    group[student.grade] = [];
+                }
+                group[student.grade].push(student.name);
+                return group
+            }, {})
+            console.log(grouped);
+            */
+
+            /*
+            const blogs = [
+                { title: "JS Tips", tags: ["JavaScript", "Programming"] },
+                { title: "CSS Tricks", tags: ["CSS", "Design"] },
+                { title: "React Guide", tags: ["JavaScript", "React"] },
+            ];
+
+            const getUniqueValues = blogs.reduce((acc, blog) => {
+                blog.tags.forEach(tag => {
+                    if(!acc.includes(tag)) {
+                        acc.push(tag);
+                    }
+                });
+                return acc;
+            }, []);
+            console.log(getUniqueValues);
+            */
+
+            /*
+            const employees = [
+                { firstName: "John", lastName: "Doe", salary: 60000 },
+                { firstName: "Jane", lastName: "Smith", salary: 45000 },
+                { firstName: "Emily", lastName: "Davis", salary: 75000 },
+            ];
+
+            const employeesNames = employees.filter(employee => {return employee.salary >= 50000})
+            .map(employee => {
+                return `${employee.firstName} ${employee.lastName}`
+            })
+            console.log(employeesNames);
+            */
+
+            /*
+            const products = [
+                { name: 'Laptop', price: 1500, category: 'electronics' },
+                { name: 'Headphones', price: 30, category: 'electronics' },
+                { name: 'Shirt', price: 40, category: 'clothing' },
+                { name: 'Phone', price: 800, category: 'electronics' },
+            ];
+
+            const filtered = products.filter(product => {
+                return product.category === 'electronics' && product.price >= 50;
+            })
+            console.log(filtered);
+            */
+
+            /*
+            const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+            const frequency = words.reduce((acc, curr) => {
+                acc[curr] = (acc[curr] || 0) + 1;
+                return acc;
+            }, {});
+            console.log(frequency);
+            */
+
+            /*
+            const students = [
+                { name: 'Alice', grade: 'A' },
+                { name: 'Bob', grade: 'B' },
+                { name: 'Charlie', grade: 'A' },
+                { name: 'David', grade: 'C' },
+            ];
+
+            const group = students.reduce((acc, curr) => {
+                if(!acc[curr.grade]) {
+                    acc[curr.grade] = [];
+                } acc[curr.grade].push(curr.name);
+                return acc;
+            }, {});
+            console.log(group);
+            */
+
+            /*
+            const users = [
+                { name: 'Alice', age: 25 },
+                { name: 'Bob', age: 17 },
+                { name: 'Charlie', age: 30 },
+                { name: 'David', age: 16 },
+            ];
+
+            const userNames = users
+                .filter(user => user.age >= 18)
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(user => user.name)
+            console.log(userNames);
+            */
+
+            /*
+            const people = [
+                { name: 'Alice', age: 25 },
+                { name: 'Bob', age: 35 },
+                { name: 'Charlie', age: 29 },
+                { name: 'David', age: 40 },
+                { name: 'Eve', age: 25 },
+            ];
+
+            function ageCategories() {
+                return people
+                .reduce((acc, person) => {
+                    let category
+                    if(person.age >= 20 && person.age <= 30) {
+                        category = '20-30'
+                    } else if(person.age >= 30 && person.age <= 40) {
+                        category = '30-40'
+                    }
+
+                    if(!acc[category]) {
+                        acc[category] = []
+                    }
+
+                    acc[category].push(person.name)
+                    return acc;
+                }, {})
+            }
+            console.log(ageCategories());
+            */
+        </script>
+    </body>
+</html>

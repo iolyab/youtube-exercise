@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <script>
+            /*
+            const numbers = [4, 12, 8, 15, 3, 7, 9];
+
+            const chained = numbers.filter(number => {
+                return number <= 10;
+            }).map(number => {
+                return number * 2;
+            }).forEach(number => console.log(number));
+            */
+
+            /*
+            const coordinates = [
+                [1, 2],
+                [-1, 5],
+                [3, -4],
+                [0, 3]
+            ];
+
+            function processCoordinates() {
+                return coordinates
+                .map(([x, y]) => ({
+                    x: x,
+                    y: y
+                }))
+                .filter(number => number.x >= 0 && number.y >= 0)
+                .forEach(number => console.log(number));
+            }
+            processCoordinates();
+            */
+
+            /*
+            const employees = [
+                { name: 'Alice', age: 35, salary: 5000 },
+                { name: 'Bob', age: 25, salary: 4000 },
+                { name: 'Charlie', age: 40, salary: 6000 },
+            ];
+
+            const salaryIncrease = employees.map(employee => {
+                    if(employee.age >= 30) {
+                        employee.salary += employee.salary * 0.1;
+                        return employee
+                    } else {
+                        return employee
+                    }
+                })
+            console.log(salaryIncrease);
+            */
+
+            /*
+            const students = [
+                { name: 'Alice', age: 20, grades: [85, 90, 78] },
+                { name: 'Bob', age: 17, grades: [92, 88, 79] },
+                { name: 'Charlie', age: 19, grades: [75, 80, 85] },
+            ];
+
+            const averageGrade = students.filter(student => {
+                return student.age >= 18;
+            }).map(student => {
+                const sum = student.grades.reduce((acc, currentValue) => acc + currentValue, 0);
+                return sum / student.grades.length;
+            });
+
+            const overallAverage = averageGrade.reduce((acc, avg) => acc + avg, 0) / averageGrade.length;
+
+            console.log(overallAverage);
+            */
+
+            /*
+            const scores = [
+                [75, 80, 85],
+                [60, 70, 65],
+                [90, 95, 100]
+            ];
+            function calculateAverage() {
+                const flattened = scores.flat()
+                const sum = flattened.reduce((acc, currentValue) => acc + currentValue, 0)
+                return sum / flattened.length;
+            }
+            console.log(calculateAverage());
+            */
+
+            /*
+            const numbers = [1, 2, 3, 4, 5, 6];
+
+            const sum = numbers
+            .filter(number => number % 2 === 0)
+            .map(number => number * 2)
+            .reduce((acc, number) => acc + number, 0);
+            console.log(sum);
+            */
+        </script>
+    </body>
+</html>
